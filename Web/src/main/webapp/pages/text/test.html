@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试联系人和摔倒统计</title>
+</head>
+<body>
+<script src="../js/jquery-1.11.1.min.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        $("#contact_submit").click(function () {
+            var cname = $("#cname").val();
+            var email = $("#email").val();
+            var phone = $("#phone").val();
+
+            //发送ajax请求
+            //所有请求的属性参数都是可以通过这个js对象定义的
+            var options = {
+                url : "/FallDetection/addContact",
+                type : "POST",
+                data : { "cname" : cname, "email" : email, "phone" : phone },
+                success : function(){
+                    alert("success!!!")
+                },
+                error : function(data){
+                    alert(data.cname,data.email,data.phone)
+                },
+                dataType: "json"
+            };
+            $.ajax(options)
+        });
+
+
+        $("#getAllContacts").click(function () {
+            var options = {
+                url : "/FallDetection/getContacts",
+                type : "GET",
+                data : {"uid": 1},
+                async : true,
+                success : function (data) {
+                    $.each(data,function (i, n) {
+                        var tbBody = "";
+                        tbBody +="<tr><td>"+n.cid+"</td><td>"+n.cname+"</td><td>"+n.email+"</td><td>"+n.phone+"</td></tr>"
+                        $("#myTb").append(tbBody);
+                    });
+                },
+                error : function(data) {
+                    console.log(data.toString());
+                }
+            };
+            $("#myTb").empty();
+            $.ajax(options)
+        });
+
+        /*添加摔倒数据*/
+        $("#addFall").click(function () {
+            var options = {
+                url : "/FallDetection/addFallData",
+                type : "POST",
+                data : {"uid": 1, "time" : new Date(), "flag" : 1},
+                async : true,
+                success : function () {
+                    alert("success!!!")
+                }
+            };
+            $.ajax(options)
+        });
+
+        /*获取全部摔倒数据*/
+        $("#getAllFall").click(function () {
+            var options = {
+                url : "/FallDetection/getAllFall",
+                type : "GET",
+                async : true,
+                success : function (data) {
+                    $.each(data,function (i, n) {
+                        var tbBody = "";
+                        tbBody +="<tr><td>"+n.id+"</td><td>"+n.uid+"</td><td>"+mytime(n.time)+"</td><td>"+(n.flag>0?"摔倒":"未摔倒")+"</td></tr>"
+                        $("#falldata").append(tbBody);
+                    });
+                },
+                error : function(data) {
+                    alert(data.toString());
+                }
+            };
+            $("#falldata").empty();
+            $.ajax(options)
+        });
+
+        function mytime(time) {
+            var myDate = new Date(time);
+            var YMD=myDate.getFullYear() + "-" + (myDate.getMonth()+1) + "-" + myDate.getDate();
+            var HMS=myDate.getHours() + ":" + myDate.getMinutes() + ":" + myDate.getSeconds();
+            var YMDHMS=YMD+" "+HMS;
+            return YMDHMS;
+        }
+
+        /*用户搜索*/
+        $("#search").click(function (){
+            var content = $("#search_content").val();
+            var searchType = $("#searchType").val();
+
+            var options = {
+                url : "/FallDetection/findUsers",
+                data : {'content': content, 'searchType' : searchType},
+                type : "GET",
+                async : true,
+                success : function (data) {
+                    $.each(data,function (i, n) {
+                        var tbBody = "";
+                        tbBody +="<tr><td>"+n.uid+"</td><td>"+n.username+"</td><td>"+n.gender+"</td><td>"+n.phone+"</td><td>"+n.email+"</td><td>"+n.address+"</td></tr>"
+                        $("#users").append(tbBody);
+                    });
+                }
+            }
+            $("#users").empty();
+            $.ajax(options);
+        });
+
+        //验证码
+        $("#getCode").click(function () {
+            var phoneNum = $("#phoneNum").val();
+            var options = {
+                url : "/FallDetection/sendCode",
+                data : {'phoneNum' : phoneNum},
+                type : "GET",
+                success : function (data) {
+                    alert(data.state+"\n"+data.msg);
+                }
+            };
+            $.ajax(options);
+        });
+
+        $("#verify").click(function () {
+            var phoneNum = $("#phoneNum").val();
+            var identifyingCode = $("#identifyingCode").val();
+            var options = {
+                url : "/FallDetection/verify",
+                data : {'phoneNum' : phoneNum , 'code' : identifyingCode },
+                type : "GET",
+                success : function (data) {
+                    if (data == 1){
+                        alert("成功");
+                    } else{
+                        alert("失败");
+                    }
+                }
+            };
+            $.ajax(options);
+        });
+
+        $("#updateUuid").click(function () {
+            var options = {
+                url : "/FallDetection/tempUpd",
+                type : "GET",
+                success : function (data) {
+                    if (data){
+                        alert("成功");
+                    } else{
+                        alert("失败");
+                    }
+                }
+            };
+            $.ajax(options);
+        });
+
+        $("#getContByName").click(function () {
+            var options = {
+                url : "/FallDetection/deleteContact",
+                type : "GET",
+                data : {'cid' : 27 },
+                success : function (data) {
+                    if (data){
+                        alert("成功");
+                    } else{
+                        alert("失败");
+                    }
+                }
+            };
+            $.ajax(options);
+        });
+
+
+    })
+
+
+</script>
+
+联系人姓名：<input type="text" name="cname" id="cname"><br>
+联系人邮箱：<input type="text" name="email" id="email"><br>
+联系人电话：<input type="text" name="phone" id="phone"><br>
+<button type="button" name="contact_submit" id="contact_submit">提交</button>
+<hr>
+<button type="button" id="getAllContacts">获取联系人</button>
+<div id="contacts">
+    <table id="myTb">
+        <tr>
+            <td>id</td>
+            <td>uid</td>
+            <td>姓名</td>
+            <td>邮箱</td>
+            <td>电话</td>
+        </tr>
+    </table>
+</div>
+<hr>
+<button type="button" id="addFall">增加摔倒数据</button>
+<hr>
+<button type="button" id="getAllFall">查询所有摔倒数据</button>
+<div><table id="falldata">
+</table></div>
+<hr>
+<select id="searchType">
+    <option value="username">用户名</option>
+    <option value="phone">电话</option>
+    <option value="email">邮箱</option>
+    <option value="address">地址</option>
+</select>
+<input type="text" id="search_content">
+<button type="button" id="search">搜索</button>
+<div>
+    <table id="users">
+    </table>
+
+</div>
+
+<hr>
+
+
+<hr>
+<button type="button" id="updateUuid">更新全体用户uuid</button>
+<a href="/FallDetection/bindingEmail">绑定邮箱，发送邮件</a>
+
+<button type="button" id="getContByName">模糊查询联系人姓名</button>
+</body>
+</html>

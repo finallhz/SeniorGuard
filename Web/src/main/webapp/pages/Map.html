@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/BMapInfo.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/datepicker3.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <style type="text/css">
+        body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+    </style>
+    <title>赛尔-位置定位</title>
+
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+
+</head>
+<body style = 'padding: 0;'>
+
+
+<div id="allmap"></div>
+
+</body>
+</html>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        $.ajax({
+            url : "/FallDetection/getPoint",
+            type : "GET",
+            async : false,
+            success: function (data) {
+                pointData = data;
+            }
+        });
+        loadJScript();  //异步加载地图
+    };
+    //百度地图API功能
+    function loadJScript() {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "//api.map.baidu.com/api?v=2.0&ak=T8t2DwdWt8gQmFk9RQmO8DHGamU4NVfK&callback=init";
+        document.body.appendChild(script);
+    }
+    var map;
+    var pointData;
+    function init() {
+        map = new BMap.Map("allmap", { enableMapClick: false });            // 创建Map实例
+        var point = new BMap.Point(pointData.longitude, pointData.latitude); // 创建点坐标
+
+        //var point = new BMap.Point(108.897302,34.159217); // 创建点坐标
+        map.centerAndZoom(point, 17);
+        map.enableScrollWheelZoom();                 //启用滚轮放大缩小
+
+        //var point1 = new BMap.Point(108.897128,34.155869);//当前坐标经纬可改
+        //map.centerAndZoom(point1,17);//显示级数越大越细
+        //map.addOverlay(new BMap.Marker(point1));//定点坐标红点覆盖
+        BMapOneMarker(point);
+    }
+
+    function BMapOneMarker(point){
+        var opts={
+            width: 210, // 信息窗口宽度
+            height: 125, // 信息窗口高度
+            title: '<h4 style="color: #fff">摔倒信息</h4>' // 信息窗口标题
+        };
+        var msg = "姓名："+pointData.name+'&nbsp;&nbsp;' +"年龄："+ pointData.age +'&nbsp;&nbsp;<button style="line-height: 20px;width: 40px;font-size: 12px;" id="map_bt">邮件</button> '+'<br/>'
+            + "坐标位置：" + point.lng+","+point.lat;
+        var infoWindow=new BMap.InfoWindow(msg,opts);//创建信息窗口对象
+
+        var marker=new BMap.Marker(point);
+        map.addOverlay(marker);
+        marker.addEventListener("click",function(){
+            map.openInfoWindow(infoWindow,point);//打开信息窗口
+
+            $('#map_bt').click(function () {
+                console.log('ok');
+                $.post(
+                    "/FallDetection/sendMail",
+                    {lon:point.lng,
+                     lat:point.lat},
+                    function (data) {
+                        if (data){
+                            alert("邮件发送成功！")
+                        } else {
+                            alert("邮件发送失败！")
+                        }
+                    }
+                )
+            });
+
+        });
+    }
+
+
+
+
+    /*$(document).ready(function () {
+
+        $.ajax({
+            url : "/FallDetection/getPoint",
+            type : "GET",
+            success: function (data) {
+                point = new BMap.Point(data.x,data.y); // 创建点坐标
+            }
+        });
+        loadJScript;
+    });*/
+</script>

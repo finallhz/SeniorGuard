@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>赛尔 - 摔倒监测</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/datepicker3.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/base.css">
+	<link href="css/styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/fallData.css">
+
+
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
+
+	<![endif]-->
+
+</head>
+
+<body style = 'padding: 0;'>
+
+	<!--主要内容盒子-->
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main" >
+
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li class="active">摔倒监测</li>
+			</ol>
+		</div><!--/.row-->
+
+
+
+		<div class="row">
+			<!--左边是折线图-->
+			<div class="col-lg-7 fd-le fl">
+				<div id="line-chart-acc">
+				</div>
+				<div id="line-chart-gyr">
+				</div>
+			</div>
+
+			<!--右边是显示是否摔倒-->
+			<div class="col-lg-5 fd-ri fr">
+                <div id="weather">
+                    <!--<ul id="weather_time"></ul>-->
+                    <!--<div id="weather_chart">-->
+                        <table class="table table-striped">
+                        <thead>
+                        <tr>
+                        <th>日期</th>
+                        <th>天气</th>
+                        <th>气温</th>
+                        <th>风向</th>
+                        </tr>
+                        </thead>
+                        <tbody></tbody>
+                        </table>
+                </div>
+
+				<div class="fd-ri-bd">
+					<div class="fd-ri-bd-head">运动状态</div>
+					<div id="fall_status">加载中</div>
+				</div>
+				<div class="fd-ri-bd">
+					<div class="fd-ri-bd-head">行走步数</div>
+					<div id="fall_step">加载中</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!--<button id="btclo">关闭</button>-->
+
+		</div>	<!--/.main-->
+	  
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/echarts.min.js"></script>
+	<script src="js/fallData.js"></script>
+	<script src="js/jsonp.js"></script>
+	<script src="js/weather.js"></script>
+
+</body>
+
+</html>

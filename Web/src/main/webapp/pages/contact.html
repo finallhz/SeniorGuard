@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lumino - 紧急联系人</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/datepicker3.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <!--<link href="css/base.css" rel="stylesheet">-->
+    <link href="css/contact.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body style = 'padding: 0;'>
+
+<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li class="active">紧急联系人</li>
+        </ol>
+    </div><!--/.row-->
+
+    <div class="row">
+        <div class="con-one clearfix">
+                <div class="col-lg-2 col-lg-offset-3">
+                    <button class="btn btn-primary" type="button" id="con-addpeo">添加紧急联系人</button>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="row">
+                        <div class="col-lg-10" style="padding-right:0;">
+                            <input type="text" class="form-control" id="con-inpname" placeholder="请输入紧急联系人姓名">
+                        </div>
+                        <div class="col-lg-2">
+                            <button type="submit" class="btn btn-warning" id="con-search">搜索</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div><!--/.row-->
+
+    <!--添加紧急联系人-->
+    <div class="row">
+        <div class="clearfix" id="con-box">
+            <div class="col-lg-4 col-lg-offset-3">
+                <div id="con-box-one">
+                    <ul>
+                        <li><span>联系人姓名：</span><input type="text" name="con-cname" id="con-cname" autocomplete="off"></li>
+                        <li><span>联系人电话：</span><input type="text" name="con-phone" id="con-phone" autocomplete="off"></li>
+                        <li><span>联系人邮箱：</span><input type="text" name="con-email" id="con-email" autocomplete="off"></li>
+                    </ul>
+                    <button type="button" id="con-box-sure">确定</button>
+                    <button type="button" id="con-box-no">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--紧急联系人表单-->
+    <div class="row">
+        <div class="col-lg-12">
+            <table class="con-table">
+                <thead>
+                <tr>
+                    <td>编号</td>
+                    <td>姓名</td>
+                    <td>电话</td>
+                    <td>邮箱</td>
+                    <td></td>
+                </tr>
+                </thead>
+                <tbody id="con-tbody">
+                </tbody>
+            </table>
+        </div>
+    </div><!--/.row-->
+
+
+
+
+
+</div>	<!--/.main-->
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/contact.js"></script>
+
+
+
+<script>
+
+    // $('#calendar').datepicker({
+    // });
+    //
+    // !function ($) {
+    //     $(document).on("click","ul.nav li.parent > a > span.icon", function(){
+    //         $(this).find('em:first').toggleClass("glyphicon-minus");
+    //     });
+    //     $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+    // }(window.jQuery);
+    //
+    // $(window).on('resize', function () {
+    //     if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+    // });
+    // $(window).on('resize', function () {
+    //     if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+    // })
+</script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <title>赛尔 - News</title>
+
+
+            <link href="css/bootstrap.min.css" rel="stylesheet">
+            <link href="css/datepicker3.css" rel="stylesheet">
+            <link rel="stylesheet" href="css/base.css">
+            <link href="css/styles.css" rel="stylesheet">
+            <!--我引的-->
+            <link href="css/news.css" rel="stylesheet">
+            <link href="css/newsAdmini.css" rel="stylesheet">
+
+            <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+            <script src="js/respond.min.js"></script>
+            <![endif]-->
+
+        </head>
+
+<body STYLE="padding: 0">
+
+<!--主要内容盒子-->
+<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li class="active">小贴士管理</li>
+        </ol>
+    </div><!--/.row-->
+
+    <div class="row">
+        <div class="col-lg-12">
+            <button id="add_news">新增新闻</button>
+            <div class="add-news">
+                <div>
+                    <span>标&nbsp;&nbsp;题:</span>
+                    <input type="text" id="news_title">
+                </div>
+                <div>
+                    <span>作&nbsp;&nbsp;者:</span>
+                    <input type="text" id="news_author">
+                    <span>上传图片</span>
+                    <input type="file" id="news_pic">
+                </div>
+                <div>
+                    <span>正文内容:</span>
+                    <p contenteditable="true" id="news_con"></p>
+                </div>
+                <div>
+                    <button id="add_ok">确定</button>
+                    <button id="add_no">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--新闻盒子-->
+    <div class="row">
+        <div class="col-lg-12 news" id="news_box">
+            <!--<div class="clearfix news-bd" data-num="0">-->
+                <!--<div class="new-bd-le fl">-->
+                    <!--<img src="uploads/557.jpg" alt="" id="news_pic01">-->
+                <!--</div>-->
+                <!--<div class="new-bd-ri fl clearfix">-->
+                    <!--<div class="new-bd-ri-edit">-->
+                        <!--<h3>京雄城际铁路今日全线通车，两地最快50分钟可达</h3>-->
+                        <!--<span>人民日报海外网</span>-->
+                        <!--<i>12-27 10:21</i>-->
+                        <!--<p>京雄城际铁路雄安站正式投入使用！-->
+                            <!--北京西站至雄安新区间最快旅行时间50分钟-->
+                            <!--大兴机场至雄安新区间最快19分钟可达-->
+                            <!--京雄城际铁路是连接北京和雄安新区的第一条外部主干铁路线路。-->
+                            <!--自北京西站引出，经过既有京九铁路至李营站，接入新建高速铁路线路，-->
+                            <!--向南途经北京市大兴区、河北省廊坊市、霸州市至雄安新区，线路全长91公里，-->
+                            <!--最高设计时速350公里，其中北京西至大兴机场段已于2019年9月26日开通运营。-->
+                            <!--此次开通的大兴机场至雄安新区段长59公里，设大兴机场、固安东、霸州北、雄安4座车站。-->
+                        <!--</p>-->
+                    <!--</div>-->
+
+                    <!--<button class="fr">删除</button>-->
+                    <!--<button class="fr">编辑</button>-->
+                <!--</div>-->
+            <!--</div>-->
+
+            <!--<div class="clearfix news-bd">-->
+                <!--<div class="new-bd-le fl">-->
+                    <!--<img src="uploads/557.jpg" alt="">-->
+                <!--</div>-->
+                <!--<div class="new-bd-ri fl clearfix" id="">-->
+                    <!--<h3 class="new-bd-ri-edit">京雄城际铁路今日全线通车，两地最快50分钟可达</h3>-->
+                    <!--<span class="new-bd-ri-edit">人民日报海外网</span>-->
+                    <!--<i class="new-bd-ri-edit">12-27 10:21</i>-->
+                    <!--<p class="new-bd-ri-edit">京雄城际铁路雄安站正式投入使用！-->
+                        <!--北京西站至雄安新区间最快旅行时间50分钟-->
+                        <!--大兴机场至雄安新区间最快19分钟可达-->
+                        <!--京雄城际铁路是连接北京和雄安新区的第一条外部主干铁路线路。-->
+                        <!--自北京西站引出，经过既有京九铁路至李营站，接入新建高速铁路线路，-->
+                        <!--向南途经北京市大兴区、河北省廊坊市、霸州市至雄安新区，线路全长91公里，-->
+                        <!--最高设计时速350公里，其中北京西至大兴机场段已于2019年9月26日开通运营。-->
+                        <!--此次开通的大兴机场至雄安新区段长59公里，设大兴机场、固安东、霸州北、雄安4座车站。-->
+                    <!--</p>-->
+                    <!--<button class="fr">删除</button>-->
+                    <!--<button class="fr">编辑</button>-->
+                <!--</div>-->
+            <!--</div>-->
+
+        </div>
+    </div>
+
+
+</div>	<!--/.main-->
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+
+<!--我引的-->
+<!--<script src="js/echarts.min.js"></script>-->
+<script src="js/newsAdmini.js"></script>
+
+<script>
+
+
+    !function ($) {
+        $(document).on("click","ul.nav li.parent > a > span.icon", function(){
+            $(this).find('em:first').toggleClass("glyphicon-minus");
+        });
+        $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+    }(window.jQuery);
+
+    $(window).on('resize', function () {
+        if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+    });
+    $(window).on('resize', function () {
+        if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+    })
+</script>
+</body>
+
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>

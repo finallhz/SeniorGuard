@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--编写每一个方法都如何向数据库发送sql语句，如何执行，相当于接口的实现类-->
+<!--namespace：名称空间，写接口的全类名，相当于告诉MyBatis这个配置文件是实现哪个接口的-->
+<mapper namespace="com.snnu.Dao.NewsDao">
+
+    <!--//添加文章
+    int addNews(News news);-->
+    <insert id="addNews" useGeneratedKeys="true" keyProperty="nid">
+        insert into news values (#{nid}, #{title}, #{pic}, #{content}, #{keywords}, #{author}, #{publishTime}, #{clicks}, #{publishStatus})
+    </insert>
+
+    <!--//撤销文章
+    int updateNewsStatus(int nid);-->
+    <update id="updateNewsStatus">
+        update news
+        set publishStatus=2
+        where nid=#{nid}
+    </update>
+
+    <!--//修改文章
+    int updateNews(News news);-->
+    <update id="updateNews">
+        update news
+        <set>
+            <if test="title != null">title=#{title}</if>
+            <if test="content != null">content=#{content}</if>
+            <if test="author != null">author=#{author}</if>
+        </set>
+        where
+        nid=#{nid}
+    </update>
+
+    <!--//查询所有有效文章
+    List<News> getAllNews();-->
+    <select id="getAllNews" resultType="com.snnu.POJO.News">
+        select * from news where publishStatus=1
+    </select>
+</mapper>

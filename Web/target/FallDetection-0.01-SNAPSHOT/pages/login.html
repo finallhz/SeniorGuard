@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeniorGuard | 登录</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+
+<div class="log">
+    <div class="log-header">登&nbsp;&nbsp;录</div>
+    <div class="log-body">
+        <form action="">
+            <fieldset>
+                <div class="log-item">
+                    <div class="log-item-img1"></div>
+                    <input class="form-control" id="username" placeholder="用户名" name="username" type="text" autofocus="" autocomplete="off">
+                </div>
+                <div class="log-item">
+                    <div class="log-item-img2"></div>
+                    <input class="form-control" id="password" placeholder="密码" name="password" type="password">
+                </div>
+                <div class="log_code clearfix">
+                    <div class="log-item2 fl" id="flushimg">
+                        <img  alt="验证码" onclick="this.src='/FallDetection/defaultKaptcha?d=' + new Date()*1" src="/FallDetection/defaultKaptcha" />
+                        <a>看不清？点击图片刷新一下</a>
+                    </div>
+                    <input class="form-control2 fr" type="text" name="tryCode" id="tryCode" class="form-control" required placeholder="请输入验证码" autocomplete="off"/>
+                </div>
+                <button type="button" name="chkBtn" id="chkBtn" class="">登&nbsp;&nbsp;录</button>
+                <!--<button type="button" name="toreg" id="toReg" class="">注册</button>-->
+                <div class="login-block">
+                    <a href="password_find.html">忘记密码</a>
+                    <a href="registered.html" id="toReg">免费注册</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</div>
+
+
+<script src="js/login1.js"></script>
+</body>
+
+</html>

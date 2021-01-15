@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /* IE6、7专门清除浮动的样式 */
+}
+
+input {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+
+/* button {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+} */
+
+button:hover {
+    cursor: pointer;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.knn-bd {
+    margin: 15px 0;
+}
+
+.knn-side {
+    height: 650px;
+    /*background-color: pink;*/
+}
+
+.knn-side div {
+    margin: 25px 10px;
+}
+
+.knn-side span {
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+}
+
+.knn-side input {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+    background-color: #fff;
+    line-height: 26px;
+}
+
+.knn-side button {
+    margin-left: 30%;
+    margin-top: 20px;
+    padding: 5px 28px;
+    background-color: #30A5FF;
+    color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    outline: none;
+}
+
+#knn_file {
+    line-height: 30px;
+    outline: none;
+    padding-left: 2px;
+}
+
+.knn-side .knn-gray{
+    background-color: #eee;
+}
+
+.knn-md {
+    height: 650px;
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+#knn_wait {
+    font-weight: 700;
+    line-height: 650px;
+    font-size: 50px;
+    text-align: center;
+}
+
+#knn_chart {
+    display: none;
+    margin: 32px auto 0;
+    width: 850px;
+    height: 600px;
+}
+
+
+
+
+
+

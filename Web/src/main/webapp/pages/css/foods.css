@@ -1,0 +1,325 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /* IE6、7专门清除浮动的样式 */
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+}
+
+input {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+input:focus {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*正常的未被访问过的链接*/
+
+a:link {
+    text-decoration: none;
+}
+
+
+/*已经访问过的链接*/
+
+a:visited {
+    text-decoration: none;
+}
+
+
+/*鼠标划过(停留)的链接*/
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* 正在点击的链接*/
+
+a:active {
+    text-decoration: none;
+}
+
+.fav_kind {
+    height: 50px;
+}
+
+.fav_kind ul {
+    padding-left: 20px;
+}
+
+.fav_kind li {
+    float: left;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.fav_kind li{
+    margin: 20px 5px;
+    padding: 3px 15px;
+    /*background-color: pink;*/
+    border-radius: 12px;
+    border:1px solid #ccc;
+}
+
+.clicked {
+    color: #fff;
+    background-color: #3579c4;
+}
+
+.fav_ok {
+    margin-top: 16px;
+}
+
+#fav_one {
+    width: 350px;
+    margin: 8px 0 0 20px ;
+    height: 50px;
+    line-height: 50px;
+    /* background-color: pink; */
+}
+
+#fav_one ul{
+    float: left;
+    padding-right: 30px;
+    padding-top: 10px;
+}
+
+#fav_one ul li{
+    float: left;
+    padding: 0 10px;
+    margin: 0 10px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+#fav_one span {
+    display: inline-block;
+    height: 30px;
+    width: 60px;
+    text-align: center;
+}
+
+#fav_one input {
+    width: 150px;
+    height: 28px;
+    /*margin-left: 5px;*/
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+#fav_one button {
+    margin-left: 10px;
+    width: 50px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 5px;
+    background-color: #385373;
+    color: #fff;
+}
+
+#foods_prompt {
+    position: relative;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #e0f6ff;
+}
+
+#foods_prompt_close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20px;
+    width: 20px;
+    line-height: 18px;
+    background-color: #fff;
+    opacity: .8;
+    cursor: pointer;
+}
+
+#fav_main {
+    /*width: 1170px;*/
+}
+
+
+#fav_main ul {
+    margin-left: 20px;
+}
+
+#fav_main ul li{
+    float: left;
+    margin: 10px 24px 10px;
+    width: 268px;
+    height: 338px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px #888;
+}
+
+#fav_main ul div {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#fav_main ul img {
+    width: 268px;
+    height: 338px;
+    transition: all 1s;
+}
+
+#fav_main ul img:hover {
+    transform: scale(1.1);
+}
+
+.fav_sp1 {
+    /*display: none;*/
+    position: absolute;
+    z-index: 5;
+    width: 268px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #fff;
+    opacity: .7;
+    color: #333;
+}
+
+.fav_sp2 {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    bottom: 10px;
+    width: 268px;
+    height: 80px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    opacity: .7;
+    color: #333;
+}
+
+#fav_main .fav_sp2 img:first-child {
+    width: 80px;
+    height: 80px;
+    transform: scale(1);
+}
+
+
+/* 右上角爱心 */
+
+#fav_main .fav_d1 {
+    position: absolute;
+    display: none;
+    z-index: 6;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+}
+
+#fav_two {
+    width: 100%;
+    height: 50px;
+}
+
+
+#tb_checked {
+    margin: 5px 0;
+    border: 1px dashed #aaa;
+    border-radius: 5px;
+    background-color: #f2faff;
+}
+
+#tb_checked div {
+    font-size: 12px;
+    height: 40px;
+    line-height: 40px;
+}
+
+#tb_checked div:first-child {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 700;
+    border-right: 1px dashed #999;
+}
+
+#foods_number {
+    color: #006dcc;
+}
+
+#tb_checked_item span {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#tb_checked_item button {
+    margin-left: 3px;
+    margin-top: -2px;
+    background-color: #59a7f7;
+    width: 32px;
+    line-height: 22px;
+    vertical-align: middle;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

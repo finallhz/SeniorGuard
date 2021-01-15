@@ -1,0 +1,72 @@
+.ding {
+    height: 20px;
+}
+
+#adf-bar,
+#adf-pie {
+    padding-top: 30px;
+    /*padding-left: 15px;*/
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.addf-data tr td:nth-child(1){
+    width: 50px;
+}
+
+.addf-data tr td:nth-child(2){
+    width: 300px;
+}
+
+.addf-data tr td:nth-child(3){
+    width: 600px;
+}
+
+.addf-data thead {
+    font-size: 16px;
+    font-weight: 700;
+    background-color:#eee;
+}
+
+.addf-data button {
+    background-color: rgb(194, 45, 33);
+    font-size: 12px;
+    border: 0px solid #ccc;
+    padding: 3px 5px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.addf-data button:focus {
+    outline: 0;
+}
+
+.add-pages {
+    width: 250px;
+    margin: 0 auto 30px;
+}
+
+.add-pages span {
+    display: inline-block;
+    padding: 2px 3px;
+    border: 1px solid #ccc;
+    /*border-radius: 3px;*/
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+
+.add-pages div  {
+    margin: 0 15px;
+}
+
+.add-pages .forbid {
+    cursor: not-allowed;
+}
+
+.add-pages .current {
+    background-color: #2F4554;
+    color: #fff;
+}

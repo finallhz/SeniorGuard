@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/imviewbg">
+
+    <RelativeLayout
+        android:id="@+id/ll0"
+        android:layout_width="205dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivv1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="280dp"
+            android:src="@drawable/sport" />
+
+        <TextView
+            android:id="@+id/ivv11"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/ivv1"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="运动推荐"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll1"
+        android:layout_width="205dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/ll0"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivv2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="280dp"
+            android:src="@drawable/streetfood"></ImageView>
+
+        <TextView
+            android:id="@+id/ivv22"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/ivv2"
+            android:layout_marginLeft="52dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="饮食推荐"
+            android:textSize="18dp" />
+    </RelativeLayout>
+</RelativeLayout>

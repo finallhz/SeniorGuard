@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="linestatus">哈哈哈</div>
+<script>
+
+    var linestatus = document.getElementById('linestatus');
+    linestatus.firstChild.nodeValue = "行走";
+
+
+    var num11 = 0;
+    var max11 = 21;
+    var time11 = null;
+
+    function aaa() {
+        if(num11>=max11){
+            clearInterval(time11);
+        }
+        var rannum = Math.floor(Math.random()*10);
+
+        if(rannum%2 == 0){
+            linestatus.firstChild.nodeValue = "行走";
+        }else{
+            linestatus.firstChild.nodeValue = "摔倒";
+        }
+        num11++;
+    }
+
+    time11 = setInterval(aaa,1000)
+
+</script>
+</body>
+</html>

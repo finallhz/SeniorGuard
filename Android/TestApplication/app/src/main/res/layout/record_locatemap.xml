@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="当前的手表定位位置"
+        android:gravity="center"
+        android:textSize="18dp">
+    </TextView>
+    <com.baidu.mapapi.map.MapView
+        android:layout_below="@id/tv1"
+        android:id="@+id/bmapview"
+        android:layout_width="match_parent"
+        android:layout_height="350sp"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_below="@id/bmapview"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:text="上一次的跌倒位置"
+        android:gravity="center"
+        android:textSize="18dp">
+    </TextView>
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapview1"
+        android:layout_width="match_parent"
+        android:layout_height="350sp"
+        android:clickable="true"
+        android:layout_below="@id/tv2"/>
+</RelativeLayout>

@@ -1,0 +1,159 @@
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+
+
+li{
+    list-style: none;
+}
+
+.con-one {
+    margin: 10px 0;
+}
+
+#con-box {
+    display: none;
+    margin-bottom: 20px;
+}
+
+#con-box-one {
+    width: 100%;
+    padding-top: 10px;
+    background-color: #ffffff;
+    border: solid 1px #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#con-box-one ul,
+#con-box-one li {
+    margin: 0;
+    padding: 0;
+}
+
+#con-box-one li {
+    margin: 15px 0;
+}
+
+#con-box-one li span {
+    padding-right: 15px;
+}
+
+#con-box-one li input {
+    width: 180px;
+    padding: 0 10px;
+    background:none;
+    outline:none;
+    border: none;
+    border-bottom: solid 1px #dddddd;
+}
+
+#con-box-one button {
+    margin: 5px 15px 15px;
+    width: 100px;
+    height: 35px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+#con-box-sure {
+    background-color: rgb(222, 87, 93);
+}
+
+#con-box-no {
+    background-color: #aaa;
+}
+
+
+.con-table {
+    width: 100%;
+    background-color: #fff;
+    font-family: '宋体';
+}
+
+.con-table thead {
+    font-weight: 700;
+    font-size: 16px;
+    background-color: #eeeeee;
+}
+
+.con-table thead td:first-child {
+    width: 50px;
+}
+
+.con-table thead td:nth-child(2) {
+    width: 150px;
+}
+
+.con-table thead td:nth-child(5) {
+    width: 150px;
+}
+
+
+.con-table td {
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 40px;
+}
+
+#con-tbody input {
+    border: none;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+}
+
+#con-tbody input:focus {
+    outline: 0;
+}
+
+#con-tbody button {
+    height: 28px;
+    line-height: 23px;
+    margin: 0 5px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+#con-tbody button:focus {
+    outline: 0;
+}
+
+#con-tbody button:first-child {
+    background-color: #d8f2f7;
+}
+
+#con-tbody button:nth-child(2) {
+    display: none;
+    background-color: #f7c5a5;
+}
+
+#con-tbody button:nth-child(3) {
+    display: none;
+    background-color: #eeeeee;
+}
+
+#con-tbody button:nth-child(4) {
+    background-color: #f3aeae;
+}
+
+
+
+
+
+
+
+
+
+

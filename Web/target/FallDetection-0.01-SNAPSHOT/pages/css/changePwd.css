@@ -1,0 +1,30 @@
+li {
+    list-style: none;
+}
+
+.cg_box {
+    margin: 30px 0;
+    padding: 20px 0px 20px 250px;
+    background-color: #fff;
+}
+
+.cg_box li {
+    margin: 30px;
+}
+
+.cg_box span {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 26px;
+}
+
+.cg_box input {
+    height: 46px;
+    padding: 0 10px;
+    font-size: 26px;
+}
+
+.cg_box button {
+    margin-left: 180px;
+}

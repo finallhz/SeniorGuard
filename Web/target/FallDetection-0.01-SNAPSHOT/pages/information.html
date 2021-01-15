@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>赛尔 - 个人信息</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="css/datepicker3.css" rel="stylesheet">-->
+    <link href="css/styles.css" rel="stylesheet">
+
+
+    <link href="css/information.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body style = 'padding: 0;'>
+
+<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li class="active">个人信息</li>
+        </ol>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1" >
+            <div class = "inf_box">
+                <ul>
+                    <li>
+                        <span>用户名</span>
+                        <input type="text" id="ifuname" disabled = "disabled">
+                    </li>
+
+                    <li>
+                        <span>密码</span>
+                        <input type="password" id="ifpwd" disabled = "disabled">
+                        <em id="inf_cgpwd">修改密码</em>
+                    </li>
+
+                    <li>
+                        <span>性别</span>
+                        <select id="ifgd" disabled = "disabled">
+                            <option value ="male">男</option>
+                            <option value ="female">女</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <span>生日</span>
+                        <input type="date" id="ifbir" disabled = "disabled">
+                    </li>
+
+                    <li>
+                        <span>年龄</span>
+                        <input type="text" id="ifage" disabled = "disabled">
+                    </li>
+
+                    <li>
+                        <span>电话</span>
+                        <input type="text" id="iftel" disabled = "disabled">
+                    </li>
+
+                    <li>
+                        <span>邮箱</span>
+                        <input type="text" id="ifem" disabled = "disabled">
+                    </li>
+
+                    <li>
+                        <span>地址</span>
+                        <input type="text" id="ifadd" disabled = "disabled">
+                    </li>
+                </ul>
+                <button type="button" class="btn btn-primary" id="cgifm_btn"> 修改个人信息 </button>
+
+            </div>
+        </div>
+        <!--<div class="col-lg-6">-->
+            <!--<div id="chart_box">-->
+                <!--<div id="food_ana"></div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+
+
+
+</div>	<!--/.main-->
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/echarts.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/information.js"></script>
+<!--<script src="js/information2.js"></script>-->
+
+<!--<script>-->
+    <!--!function ($) {-->
+        <!--$(document).on("click","ul.nav li.parent > a > span.icon", function(){-->
+            <!--$(this).find('em:first').toggleClass("glyphicon-minus");-->
+        <!--});-->
+        <!--$(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");-->
+    <!--}(window.jQuery);-->
+
+    <!--$(window).on('resize', function () {-->
+        <!--if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')-->
+    <!--})-->
+    <!--$(window).on('resize', function () {-->
+        <!--if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')-->
+    <!--})-->
+<!--</script>-->
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <link rel="stylesheet" href="css/registered.css">
+</head>
+
+<body>
+
+<div class="user_reg">
+    <div class="user_reg_head">免费注册
+        <div class="user_reg_lo">已有账号？<a href="login.html">立即登入</a></div>
+    </div>
+    <form action="" method="POST" name="user-regi">
+        <fieldset>
+            <div class="form-list">
+                <div class="form-group">
+                    <div class="form-item">
+                        <span>用户名：</span>
+                        <input type="text" id="username_reg">
+                        <em id="u-ck1">该用户名已被注册！</em>
+                        <em id="u-ck2"></em>
+                    </div>
+                    <div class="form-item">
+                        <span>密码：</span>
+                        <input type="password" id="pwd_reg">
+                        <em id="pwd-ck1">请输入至少6位！</em>
+                        <em id="pwd-ck2"></em>
+                    </div>
+                    <div class="form-item">
+                        <span>确认密码：</span>
+                        <input type="password" id="repwd_reg">
+                        <em id="repwd-ck1">与上述密码不同!</em>
+                        <em id="repwd-ck2"></em>
+                    </div>
+                    <div class="form-item">
+                        <span>电话：</span>
+                        <input type="tel" id="tel" name="tel">
+                        <em id="tel-ck1">请输入正确的电话！</em>
+                        <em id="tel-ck2"></em>
+                    </div>
+                    <div class="form-item">
+                        <span>邮箱：</span>
+                        <input type="email" id="email" name="email" autocomplete="off">
+                        <em id="ema-ck1">请输入正确的邮箱！</em>
+                        <em id="ema-ck2"></em>
+                    </div>
+                    <div class="form-item">
+                        <span>性别：</span>
+                        <input type="radio" name="sex" id="male" value="1"><label for="male">男</label>
+                        <input type="radio" name="sex" id="female" value="0"><label for="female">女</label>
+                    </div>
+                    <div class="form-item">
+                        <span>生日：</span>
+                        <input type="date" id="birth" name="birth">
+                    </div>
+                    <div class="form-item">
+                        <span>地址：</span>
+                        <input type="text" id="address">
+                    </div>
+
+                </div>
+                <div class="form-foot">
+                    <button type="button" name="chkBtn" id="chkBtn" class="">立即注册</button>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</div>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/registered.js"></script>
+</body>
+
+</html>

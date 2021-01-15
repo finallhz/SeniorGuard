@@ -1,0 +1,94 @@
+.new-bd-ri button {
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 3px 8px;
+    border: none;
+    border-radius: 3px;
+    background-color: #eee;
+}
+
+.news-edit {
+}
+
+.news-del {
+}
+
+
+
+
+#add_news {
+    padding: 5px 10px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 0 0 180px;
+}
+
+.add-news {
+    display: none;
+    width: 1022px;
+    /*height: 300px;*/
+    margin: 20px auto 10px;
+    background-color: #fff;
+    padding: 15px;
+    border: 2px dashed #aaa;
+    border-radius: 5px;
+}
+
+.add-news div {
+    line-height: 34px;
+    margin-left: 20px;
+}
+
+.add-news span {
+    padding: 0 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.add-news input {
+    width: 200px;
+    padding: 0 10px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+}
+
+.add-news input[type='file'] {
+    display: inline-block;
+    outline: none;
+    border: 1px solid #aaa;
+    border-radius: 2px;
+    vertical-align: middle;
+    height: 28px;
+    line-height: 24px;
+}
+
+/*.add-news input[type='file'] button {*/
+    /*margin-top: -10px;*/
+/*}*/
+
+.add-news div:first-child input {
+    width: 885px;
+}
+
+.add-news div:nth-child(2) input {
+    margin-right: 30px;
+}
+
+
+
+.add-news div:nth-child(4) button {
+    line-height: 30px;
+    padding: 0 8px;
+    margin: 0 5px;
+}
+
+.add-news p {
+    width: 945px;
+    /*height: 200px;*/
+    /*padding: 0 10px;*/
+    outline: none;
+    border: 1px solid #aaa;
+    padding: 20px 10px;
+}

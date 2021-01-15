@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SeniorGuard | 菜品推荐</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/foods.css">
+    <link rel="stylesheet" href="css/results.css">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body style="padding: 0">
+
+
+<!--/.main-->
+<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+
+    <!--/.row-->
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li class="active">菜品推荐</li>
+        </ol>
+    </div>
+
+    <div class="row" id="foods_prompt">
+        <p>提示：请根据您的喜好选择<b>5</b>至<b>8</b>道菜品，我们将跟您的喜好做出菜品推荐。</p>
+        <div id="foods_prompt_close">x</div>
+        <!--<span>确定</span>-->
+    </div>
+
+    <div class="row">
+        <div class="fav_kind clearfix fl">
+                <!--<div class>全部菜品</div>-->
+                <ul class="clearfix" id="fav_kind_ul">
+                    <li class="clicked" data_num="0">全部菜品</li>
+                    <li data_num="1">粤菜</li>
+                    <li data_num="2">鲁菜</li>
+                    <li data_num="3">川菜</li>
+                    <li data_num="4">湘菜</li>
+                    <li data_num="5">闽菜</li>
+                    <li data_num="6">浙菜</li>
+                    <li data_num="7">苏菜</li>
+                    <li data_num="8">徽菜</li>
+                    <li data_num="9">其它</li>
+                </ul>
+            </div>
+        <div id="fav_one" class="fl">
+            <span>搜索菜品</span>
+            <input type="text" placeholder="请输入你喜欢的菜品名" id="foods_shinp">
+            <button type="button" id="foods_shbtn">搜索</button>
+        </div>
+        <div class="fav_ok fl">
+            <button type="button" class="btn btn-danger" id="changeOK">选择完毕，查看推荐结果</button>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div id="tb_checked" class="row">
+                <div class="col-lg-2">已&nbsp;选&nbsp;菜&nbsp;品&nbsp;&nbsp;(<span id="foods_number">0</span>/8)</div>
+                <div class="col-lg-10" id="tb_checked_item">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--推荐结果-->
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1" id="results">
+        </div>
+    </div>
+
+
+    <!--菜品展示-->
+    <div class="row">
+        <div id="fav_main">
+            <ul class="clearfix" id="fav_main_ul">
+                <p>正在加载中。。。</p>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/foods.js"></script>
+
+<!--<script>-->
+    <!--! function($) {-->
+        <!--$(document).on("click", "ul.nav li.parent > a > span.icon", function() {-->
+            <!--$(this).find('em:first').toggleClass("glyphicon-minus");-->
+        <!--});-->
+        <!--$(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");-->
+    <!--}(window.jQuery);-->
+
+    <!--$(window).on('resize', function() {-->
+        <!--if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')-->
+    <!--})-->
+    <!--$(window).on('resize', function() {-->
+        <!--if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')-->
+    <!--})-->
+<!--</script>-->
+
+</body>
+
+</html>
+

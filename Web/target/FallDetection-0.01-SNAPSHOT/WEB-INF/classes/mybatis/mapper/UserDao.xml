@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--编写每一个方法都如何向数据库发送sql语句，如何执行，相当于接口的实现类-->
+<!--namespace：名称空间，写接口的全类名，相当于告诉MyBatis这个配置文件是实现哪个接口的-->
+<mapper namespace="com.snnu.Dao.UserDao">
+
+    <!--select:用来定义一个查询操作。 id：方法名，相当于是对某个方法的实现
+            resultType：指定方法运行后的返回值类型（查询操作必须指定）
+            #{属性名}：代表取出传过来的参数的值-->
+    <select id="getUserByUID" resultType="com.snnu.POJO.User">
+      select * from user where uid = #{uid}
+    </select>
+
+    <!--登录模块（用户名、邮箱、密码）-->
+    <select id="login" resultType="com.snnu.POJO.User">
+        select * from user where pwd = #{pwd}
+        <choose>
+            <when test="username != null">
+                and username = #{username}
+            </when>
+            <when test="email != null">
+                and email = #{email}
+            </when>
+            <when test="phone != null">
+                and phone = #{phone}
+            </when>
+            <otherwise>
+                and 1 = 0
+            </otherwise>
+        </choose>
+    </select>
+
+    <!--注册private int uid;
+    private String username;
+    private String pwd;
+    private int gender;
+    private int role;
+    private String email;
+    private String phone;
+    private String address;
+    private Date birthdate;
+    private String remarks;
+    private String uuid;-->
+    <!--让MyBatis自动的将自增id赋值给传入的User对象的id属性
+    useGeneratedKeys 使用自动生成的主键
+    keyProperty 将刚才自增的id封装给哪个属性
+    -->
+    <insert id="addUser" useGeneratedKeys="true" keyProperty="uid">
+        insert into user values (#{uid},#{username},#{pwd},#{gender},#{age},#{role},#{email},#{phone},#{address},#{birthdate},#{remarks},#{uuid})
+    </insert>
+
+    <!--判断用户名是否重复
+    int getCountByUsername(String username);-->
+    <select id="getCountByUsername" resultType="java.lang.Integer">
+        select count(*) from user where username = #{username}
+    </select>
+    
+    <!--重置密码
+    int updatePwd(User user)-->
+    <update id="updatePwd">
+        update user
+        set pwd=#{pwd}
+        where uid=#{uid}
+    </update>
+
+    <!--//查询所有用户
+    List<User> getAllUser();
+    -->
+    <select id="getAllUser" resultType="com.snnu.POJO.User">
+        select * from user where role=0
+    </select>
+
+    <!--//根据用户名查找用户
+    User getUserByUsername(String username);-->
+    <select id="getUserByUsername" resultType="com.snnu.POJO.User">
+        select * from user where username=#{username}
+    </select>
+
+    <!--//用户信息修改(根据用户ID)
+    int updateUser(User user);
+    private String username;
+    private String pwd;
+    private String email;
+    private String phone;
+    private String address;
+    -->
+    <update id="updateUser">
+        update user
+        <set>
+            <if test="username != null">username=#{username},</if>
+            <if test="pwd != null">pwd=#{pwd},</if>
+            <if test="email != null">email=#{email},</if>
+            <if test="phone != null">phone=#{phone},</if>
+            <if test="address != null">address=#{address},</if>
+            <if test="uuid != null">uuid=#{uuid}</if>
+        </set>
+        where uid=#{uid}
+    </update>
+
+    <!--//用户删除
+    int deleteUserByUID();-->
+    <delete id="deleteUserByUID">
+        delete from user where uid=#{uid}
+    </delete>
+
+    <!--int deleteUserRefCont(int uid);-->
+    <delete id="deleteUserRefCont">
+        delete from user_ref_cont where uid=#{uid}
+    </delete>
+
+    <!--
+        查询模块
+
+    //根据用户名模糊查找
+    List<User> getUsersByUsername();
+    -->
+    <select id="getUsersByUsername" resultType="com.snnu.POJO.User">
+        select
+            *
+        from
+            user
+        where
+            username like concat('%', #{username}, '%')
+    </select>
+
+    <!--//根据电话模糊查找
+    List<User> getUsersByPhone();-->
+    <select id="getUsersByPhone" resultType="com.snnu.POJO.User">
+        select
+            *
+        from
+            user
+        where
+            phone like concat('%', #{phone}, '%')
+    </select>
+
+    <!--//根据邮箱模糊查找
+    List<User> getUsersByEmail();-->
+    <select id="getUsersByEmail" resultType="com.snnu.POJO.User">
+        select
+            *
+        from
+            user
+        where
+            email like concat('%', #{email}, '%')
+    </select>
+
+    <!--//根据地址模糊查找
+    List<User> getUsersByAddr();-->
+    <select id="getUsersByAddr" resultType="com.snnu.POJO.User">
+        select
+            *
+        from
+            user
+        where
+            address like concat('%', #{address}, '%')
+    </select>
+
+    <!--//根据uuid查询用户
+    User getUserByUuid(String uuid);-->
+    <select id="getUserByUuid" resultType="com.snnu.POJO.User">
+        select
+            *
+        from
+            user
+        where
+            uuid=#{uuid}
+    </select>
+</mapper>

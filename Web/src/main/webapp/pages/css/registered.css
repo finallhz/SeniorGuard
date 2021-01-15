@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #4989f7;
+}
+
+body {
+    background-color: #C9D9E4;
+}
+
+input {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+}
+
+fieldset {
+    border: none;
+}
+
+.form-list {
+    margin-top: 15px;
+}
+
+.user_reg {
+    width: 700px;
+    margin: 100px auto;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+.user_reg_head {
+    position: relative;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    color: #606468;
+    border-bottom: 1px solid #eee;
+}
+
+.user_reg_lo {
+    position: absolute;
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    bottom: 5px;
+    right: 30px;
+}
+
+.form-item {
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+}
+
+.form-item input {
+    height: 25px;
+    width: 180px;
+    padding: 0 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.form-item span {
+    display: inline-block;
+    width: 80px;
+    color: #606468;
+    font-size: 16px;
+}
+
+.form-item input[type="radio"] {
+    width: 20px;
+    height: 14px;
+    vertical-align: middle;
+}
+
+.form-item label {
+    vertical-align: middle;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.form-foot {
+    text-align: center;
+}
+
+.user_reg button {
+    margin: 20px 0 30px 0;
+    height: 45px;
+    width: 350px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #e1726d;
+    font-size: 18px;
+}
+
+#pwd-ck1,
+#repwd-ck1,
+#tel-ck1,
+#ema-ck1,
+#u-ck1 {
+    display: none;
+    font-style: normal;
+    padding-left: 15px;
+    font-size: 12px;
+    color: #c52a32cc;
+}
+
+#repwd-ck2,
+#tel-ck2,
+#ema-ck2,
+#pwd-ck2,
+#u-ck2 {
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-image: url(../images/正确.png);
+    background-size: 30px;
+    background-position: 5px 38px;
+}
+
+#chkBtn {
+    cursor: pointer;
+}

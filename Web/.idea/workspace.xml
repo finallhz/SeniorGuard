@@ -1,0 +1,1610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="FallDetection:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="640234ef-b066-4d6e-bf3c-679a93a6afaa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/snnu/Controller/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snnu/Controller/ContactController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/snnu/Controller/ModelTrainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snnu/Controller/ModelTrainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/snnu/RunPython/ModelTrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snnu/RunPython/ModelTrain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/snnu/WebSocket/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snnu/WebSocket/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/snnu/WebSocket/DataProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snnu/WebSocket/DataProcess.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/data/heartAndStepData.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/data/heartAndStepData.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pages/js/knn.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pages/js/knn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/pythonFile/KNNTrainFea.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/pythonFile/KNNTrainFea.py" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/data/heartAndStepData.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="1" column="120" selection-start-line="1" selection-start-column="120" selection-end-line="1" selection-end-column="120" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/Controller/ModelTrainController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="74" column="57" selection-start-line="74" selection-start-column="57" selection-end-line="74" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/knn.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/js/knn.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1540">
+              <caret line="83" column="22" lean-forward="true" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/Controller/ContactController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="38" column="51" lean-forward="true" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/RunPython/ModelTrain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/Service/NewsService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/Controller/RecentDataController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="258">
+              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/Utils/HeartAndStepUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="438">
+              <caret line="77" column="32" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="Tag Library Descriptor" />
+        <option value="XSLT Stylesheet" />
+        <option value="FxmlFile" />
+        <option value="XML Properties File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ContextLoaderListener</find>
+      <find>Session</find>
+      <find>mail</find>
+      <find>id</find>
+      <find>Mail</find>
+      <find>DefaultProfile</find>
+      <find>waitFor</find>
+      <find>statFoods</find>
+      <find>推荐菜品编号</find>
+      <find>rows</find>
+      <find>json</find>
+      <find>usernameCookie</find>
+      <find>updateFallData</find>
+      <find>sendIdentifyingCode</find>
+      <find>float</find>
+      <find>JSONObject</find>
+      <find>sportData</find>
+      <find>print</find>
+      <find>getAllFallData</find>
+      <find>delete</find>
+      <find>logout</find>
+      <find>get</find>
+      <find>根据uid</find>
+      <find>update</find>
+      <find>getUserInfo</find>
+      <find>Response</find>
+      <find>10.150</find>
+      <find>replaceModel</find>
+      <find>updataPre</find>
+      <find>/addContact</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/NewsDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/Service/NewsService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/WebSocket/DataSocketListener.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/FoodsDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/Service/FoodsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/Dao/FoodsDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/Controller/RecoFoodsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/Dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/Utils/MailUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/Service/UserService.java" />
+        <option value="$PROJECT_DIR$/target/FallDetection/pages/news.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/Controller/NewsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/POJO/News.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/js/login1.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UserDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/POJO/Food.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/POJO/User.java" />
+        <option value="$PROJECT_DIR$/target/FallDetection/WEB-INF/classes/data/heartAndStepData.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/Utils/HeartAndStepUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/js/ECG02.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/Map.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pythonFile/judgeFall.py" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/POJO/FallData.java" />
+        <option value="$PROJECT_DIR$/target/FallDetection/WEB-INF/classes/mybatis/mapper/FallStatisticsDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/js/fallData.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/Controller/EnergyController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/Dao/FallStatisticsDao.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/FallStatisticsDao.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/Service/FallStatisticsService.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dbconfig.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/Service/ContactService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/js/iframe02.js" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/WebSocket/ListenWebSocket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/Controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/Controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/sportStateChart.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/Controller/FallStatisticsController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/css/index.css" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/WebSocket/Data.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/WebSocket/DataProcess.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/data/heartAndStepData.properties" />
+        <option value="$PROJECT_DIR$/target/FallDetection/pythonFile/KNNTrainFea.py" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/RunPython/ModelTrain.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pythonFile/KNNTrainFea.py" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/Controller/ModelTrainController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/pages/js/knn.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/snnu/Controller/ContactController.java" />
+      </list>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Maven/apache-maven-3.5.2" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="FallDetection Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="snnu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="snnu" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="snnu" type="462c0819:PsiDirectoryNode" />
+              <item name="Service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="snnu" type="462c0819:PsiDirectoryNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="snnu" type="462c0819:PsiDirectoryNode" />
+              <item name="WebSocket" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="pythonFile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FallDetection" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FallDetection" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="FallDetection-0.01-SNAPSHOT" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1610700203822" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/target/META-INF/MANIFEST.MF" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propDebugger" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IdeaProjects\FallDetection\src\main\webapp" />
+      <recent name="C:\Users\Administrator\IdeaProjects\FallDetection\src\main\webapp\pic" />
+      <recent name="C:\Users\Administrator\IdeaProjects\FallDetection\src\main\webapp\pages\images" />
+      <recent name="C:\Users\Administrator\IdeaProjects\FallDetection\target\FallDetection\pythonFile" />
+      <recent name="C:\Users\Administrator\IdeaProjects\FallDetection\src\main\webapp\pythonFile" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IdeaProjects\FallDetection\src\main\webapp\MapPNG" />
+      <recent name="C:\Users\Administrator\IdeaProjects\FallDetection\src\main\webapp\pages\uploads" />
+      <recent name="C:\Users\Administrator\IdeaProjects\FallDetection\src\main\java\com\snnu\WebSocket" />
+      <recent name="C:\Users\Administrator\IdeaProjects\FallDetection\src\main\webapp" />
+      <recent name="C:\Users\Administrator\IdeaProjects\FallDetection\src\main\webapp\pages" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="sendMail" />
+      <command value="servers.xml" />
+    </option>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.47">
+    <configuration name="AliyunMessageUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.snnu.Utils.AliyunMessageUtil" />
+      <module name="FallDetection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.snnu.Utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RecommendFoods" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.snnu.RunPython.RecommendFoods" />
+      <module name="FallDetection" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.snnu.RunPython.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyBatisTest.contactTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FallDetection" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyBatisTest" />
+      <option name="METHOD_NAME" value="contactTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyBatisTest.mathTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FallDetection" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyBatisTest" />
+      <option name="METHOD_NAME" value="mathTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tomcat 8.5.47" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.47" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="COMMON_VM_ARGUMENTS" value="-Dfile.encoding=UTF-8" />
+      <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
+      <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
+      <deployment>
+        <artifact name="FallDetection:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/FallDetection" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_FallDetection" />
+        <option name="HTTPS_PORT" value="443" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63198" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="FallDetection:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.AliyunMessageUtil" />
+      <item itemvalue="Application.RecommendFoods" />
+      <item itemvalue="JUnit.MyBatisTest.mathTest" />
+      <item itemvalue="JUnit.MyBatisTest.contactTest" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.47" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.RecommendFoods" />
+        <item itemvalue="Application.AliyunMessageUtil" />
+        <item itemvalue="JUnit.MyBatisTest.contactTest" />
+        <item itemvalue="JUnit.MyBatisTest.mathTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="640234ef-b066-4d6e-bf3c-679a93a6afaa" name="Default Changelist" comment="" />
+      <created>1596418961482</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596418961482</updated>
+      <workItem from="1596418963775" duration="19924000" />
+      <workItem from="1596701642304" duration="10914000" />
+      <workItem from="1597060313777" duration="734000" />
+      <workItem from="1598923864010" duration="12182000" />
+      <workItem from="1598951897253" duration="872000" />
+      <workItem from="1598952797109" duration="5283000" />
+      <workItem from="1599007730140" duration="21588000" />
+      <workItem from="1599103969717" duration="33180000" />
+      <workItem from="1599467309760" duration="18519000" />
+      <workItem from="1599649304382" duration="6261000" />
+      <workItem from="1599825781101" duration="613000" />
+      <workItem from="1600092096677" duration="157000" />
+      <workItem from="1600246742330" duration="2116000" />
+      <workItem from="1600307234674" duration="29234000" />
+      <workItem from="1600418472695" duration="11605000" />
+      <workItem from="1600688427148" duration="10217000" />
+      <workItem from="1600848719359" duration="13795000" />
+      <workItem from="1600911792823" duration="6453000" />
+      <workItem from="1601031417441" duration="778000" />
+      <workItem from="1601343138318" duration="6100000" />
+      <workItem from="1601433184760" duration="25841000" />
+      <workItem from="1602492008028" duration="544000" />
+      <workItem from="1602572699719" duration="31148000" />
+      <workItem from="1602809729586" duration="5404000" />
+      <workItem from="1603245609957" duration="41325000" />
+      <workItem from="1603781229822" duration="36332000" />
+      <workItem from="1604401348292" duration="5471000" />
+      <workItem from="1604454045396" duration="1029000" />
+      <workItem from="1604456414391" duration="725000" />
+      <workItem from="1604457179256" duration="14292000" />
+      <workItem from="1604997114555" duration="838000" />
+      <workItem from="1605498420249" duration="12427000" />
+      <workItem from="1606377198087" duration="4933000" />
+      <workItem from="1606393027710" duration="163000" />
+      <workItem from="1606393565572" duration="10738000" />
+      <workItem from="1606981988253" duration="16211000" />
+      <workItem from="1607067802421" duration="599000" />
+      <workItem from="1607078746296" duration="211000" />
+      <workItem from="1607148677935" duration="489000" />
+      <workItem from="1607678198336" duration="388000" />
+      <workItem from="1607844814758" duration="36917000" />
+      <workItem from="1608199301595" duration="3500000" />
+      <workItem from="1608518556466" duration="94380000" />
+      <workItem from="1609054005139" duration="22223000" />
+      <workItem from="1609160859188" duration="9703000" />
+      <workItem from="1609314128582" duration="14878000" />
+      <workItem from="1609727394973" duration="14858000" />
+      <workItem from="1609833410643" duration="13907000" />
+      <workItem from="1609920012152" duration="15367000" />
+      <workItem from="1609943899486" duration="261000" />
+      <workItem from="1610018585424" duration="16729000" />
+      <workItem from="1610356922598" duration="18433000" />
+      <workItem from="1610504789507" duration="4212000" />
+      <workItem from="1610525758501" duration="21629000" />
+      <workItem from="1610624353468" duration="6689000" />
+    </task>
+    <task id="LOCAL-00001" summary="赛尔网络项目。整合了运动状态算法（本地不在项目）和用户表数据库操作。">
+      <created>1598953770226</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1598953770226</updated>
+    </task>
+    <task id="LOCAL-00002" summary="赛尔网络项目。整合了运动状态算法（本地不在项目）和用户表数据库操作。">
+      <created>1599014005212</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599014005212</updated>
+    </task>
+    <task id="LOCAL-00003" summary="登录后端功能完成">
+      <created>1599131953400</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599131953400</updated>
+    </task>
+    <task id="LOCAL-00004" summary="登录、注册后端功能完成">
+      <created>1599478669110</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599478669110</updated>
+    </task>
+    <task id="LOCAL-00005" summary="9.22">
+      <created>1600776276328</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1600776276328</updated>
+    </task>
+    <task id="LOCAL-00006" summary="10.13">
+      <created>1602572789239</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1602572789239</updated>
+    </task>
+    <task id="LOCAL-00007" summary="10.13">
+      <created>1602574039859</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1602574039859</updated>
+    </task>
+    <task id="LOCAL-00008" summary="登录验证码完成，拦截器、登出完成。">
+      <created>1602672871129</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1602672871129</updated>
+    </task>
+    <task id="LOCAL-00009" summary="发送跌倒邮件完成。">
+      <created>1603956122014</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1603956122015</updated>
+    </task>
+    <task id="LOCAL-00010" summary="发送跌倒邮件完成2。">
+      <created>1603981781214</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1603981781214</updated>
+    </task>
+    <task id="LOCAL-00011" summary="手机短信验证，绑定邮箱。">
+      <created>1605530049329</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1605530049329</updated>
+    </task>
+    <task id="LOCAL-00012" summary="推荐算法1完成">
+      <created>1608004353253</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1608004353253</updated>
+    </task>
+    <task id="LOCAL-00013" summary="推荐算法1完成(1)">
+      <created>1608005184044</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1608005184044</updated>
+    </task>
+    <task id="LOCAL-00014" summary="推荐算法1完成(2)">
+      <created>1608031459805</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608031459805</updated>
+    </task>
+    <task id="LOCAL-00015" summary="推荐算法1完成(3)">
+      <created>1608036580966</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1608036580966</updated>
+    </task>
+    <task id="LOCAL-00016" summary="能量消耗算法完成。">
+      <created>1608127073439</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1608127073439</updated>
+    </task>
+    <task id="LOCAL-00017" summary="修改推荐算法">
+      <created>1608265232308</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1608265232309</updated>
+    </task>
+    <task id="LOCAL-00018" summary="联系人数据库操作">
+      <created>1608523279926</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1608523279926</updated>
+    </task>
+    <task id="LOCAL-00019" summary="cookie修改">
+      <created>1608524265170</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1608524265170</updated>
+    </task>
+    <task id="LOCAL-00020" summary="cookie修改">
+      <created>1608525105714</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1608525105714</updated>
+    </task>
+    <task id="LOCAL-00021" summary="cookie修改">
+      <created>1608537468129</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1608537468129</updated>
+    </task>
+    <task id="LOCAL-00022" summary="摔倒误判删除">
+      <created>1608540745588</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1608540745588</updated>
+    </task>
+    <task id="LOCAL-00023" summary="摔倒误判删除更新列表，忘记密码">
+      <created>1608542925529</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1608542925529</updated>
+    </task>
+    <task id="LOCAL-00024" summary="联系人后台修改">
+      <created>1608552236668</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1608552236669</updated>
+    </task>
+    <task id="LOCAL-00025" summary="忘记密码v0.1">
+      <created>1608554965401</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1608554965401</updated>
+    </task>
+    <task id="LOCAL-00026" summary="运动数据显示v1.0">
+      <created>1608882456956</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1608882456956</updated>
+    </task>
+    <task id="LOCAL-00027" summary="运动数据显示v1.1">
+      <created>1609044727931</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1609044727931</updated>
+    </task>
+    <task id="LOCAL-00028" summary="运动数据显示v1.1">
+      <created>1609059974538</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1609059974538</updated>
+    </task>
+    <task id="LOCAL-00029" summary="管理员邮件，新闻发布">
+      <created>1609160724252</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1609160724252</updated>
+    </task>
+    <task id="LOCAL-00030" summary="KNN修改，查询用户">
+      <created>1609234172045</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1609234172045</updated>
+    </task>
+    <task id="LOCAL-00031" summary="修改运动数据显示">
+      <created>1609387161449</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1609387161449</updated>
+    </task>
+    <task id="LOCAL-00032" summary="补充菜品查询，用户删除，模型替换">
+      <created>1609753423219</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1609753423219</updated>
+    </task>
+    <task id="LOCAL-00033" summary="删除用户补充">
+      <created>1609760808523</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1609760808523</updated>
+    </task>
+    <task id="LOCAL-00034" summary="修改时间">
+      <created>1609836552416</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1609836552416</updated>
+    </task>
+    <task id="LOCAL-00035" summary="修改用户相关功能">
+      <created>1609851621322</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1609851621322</updated>
+    </task>
+    <task id="LOCAL-00036" summary="个人信息修改">
+      <created>1609921997353</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1609921997354</updated>
+    </task>
+    <task id="LOCAL-00037" summary="根据uid获取用户">
+      <created>1609923012136</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1609923012136</updated>
+    </task>
+    <task id="LOCAL-00038" summary="一些修改">
+      <created>1609940131247</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1609940131248</updated>
+    </task>
+    <task id="LOCAL-00039" summary="一些修改">
+      <created>1609942154175</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1609942154175</updated>
+    </task>
+    <task id="LOCAL-00040" summary="摔倒统计信息">
+      <created>1610435710823</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1610435710823</updated>
+    </task>
+    <task id="LOCAL-00041" summary="结题V1.0">
+      <created>1610594222092</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1610594222092</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="MyBatisTest_mathTest - 2020.09.22 at 21h 36m 37s.xml">
+      <configuration name="MyBatisTest.mathTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyBatisTest_mathTest - 2020.09.22 at 21h 39m 02s.xml">
+      <configuration name="MyBatisTest.mathTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyBatisTest_mathTest - 2020.09.22 at 21h 39m 53s.xml">
+      <configuration name="MyBatisTest.mathTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyBatisTest_mathTest - 2020.09.22 at 21h 40m 10s.xml">
+      <configuration name="MyBatisTest.mathTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyBatisTest_mathTest - 2020.09.22 at 21h 43m 32s.xml">
+      <configuration name="MyBatisTest.mathTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyBatisTest_mathTest - 2020.09.22 at 21h 44m 08s.xml">
+      <configuration name="MyBatisTest.mathTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyBatisTest_contactTest - 2020.10.06 at 21h 20m 32s.xml">
+      <configuration name="MyBatisTest.contactTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyBatisTest_contactTest - 2020.10.06 at 21h 22m 55s.xml">
+      <configuration name="MyBatisTest.contactTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyBatisTest_mathTest - 2020.10.06 at 21h 23m 53s.xml">
+      <configuration name="MyBatisTest.mathTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MyBatisTest_contactTest - 2020.10.06 at 21h 24m 31s.xml">
+      <configuration name="MyBatisTest.contactTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="713319000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25899744" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" weight="0.34366578" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4690027" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32884097" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4993573" weight="0.32884097" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32884097" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50064266" side_tool="true" weight="0.4218329" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32884097" />
+      <window_info anchor="bottom" id="Application Servers" order="13" weight="0.32884097" />
+      <window_info anchor="bottom" id="Spring" order="14" weight="0.32884097" />
+      <window_info anchor="bottom" id="Java Enterprise" order="15" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32969153" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.3033419" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="JSF" order="9" weight="0.32969153" />
+      <window_info anchor="right" id="CDI" order="10" weight="0.32969153" />
+      <window_info anchor="right" id="Bean Validation" order="11" weight="0.32969153" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="推荐算法1完成(1)" />
+    <MESSAGE value="推荐算法1完成(2)" />
+    <MESSAGE value="推荐算法1完成(3)" />
+    <MESSAGE value="能量消耗算法完成。" />
+    <MESSAGE value="修改推荐算法" />
+    <MESSAGE value="联系人数据库操作" />
+    <MESSAGE value="cookie修改" />
+    <MESSAGE value="摔倒误判删除" />
+    <MESSAGE value="摔倒误判删除更新列表，忘记密码" />
+    <MESSAGE value="联系人后台修改" />
+    <MESSAGE value="忘记密码v0.1" />
+    <MESSAGE value="运动数据显示v1.0" />
+    <MESSAGE value="运动数据显示v1.1" />
+    <MESSAGE value="管理员邮件，新闻发布" />
+    <MESSAGE value="KNN修改，查询用户" />
+    <MESSAGE value="修改运动数据显示" />
+    <MESSAGE value="补充菜品查询，用户删除，模型替换" />
+    <MESSAGE value="删除用户补充" />
+    <MESSAGE value="修改时间" />
+    <MESSAGE value="修改用户相关功能" />
+    <MESSAGE value="个人信息修改" />
+    <MESSAGE value="根据uid获取用户" />
+    <MESSAGE value="一些修改" />
+    <MESSAGE value="摔倒统计信息" />
+    <MESSAGE value="结题V1.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="结题V1.0" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dbconfig.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/Dao/ContactDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/ContactDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/Utils/MailUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/RunPython/RecommendFoods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="21" column="87" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/js/iframe02.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/js/iframe01.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/WebSocket/ListenWatchSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/WebSocket/WebSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="87" column="58" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="15" lean-forward="true" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/FallStatisticsDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="577">
+          <caret line="36" column="58" lean-forward="true" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/Controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#7457#7458#0" expanded="true" />
+            <element signature="e#7507#7508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/Controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#288#289#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/fallData.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="84" column="22" lean-forward="true" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/js/fallData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4708">
+          <caret line="214" column="3" lean-forward="true" selection-start-line="214" selection-start-column="3" selection-end-line="214" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/applicationContext-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/Service/ContactService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="29" column="32" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/WebSocket/DataReceiveListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="12" column="55" lean-forward="true" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/WebSocket/DataReceive.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-754">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/js/ECG01.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/ECG.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="65" column="20" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/WebSocket/DataSocketListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/RunPython/FallDetect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="197" column="33" lean-forward="true" selection-start-line="197" selection-start-column="33" selection-end-line="197" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/Service/FallStatisticsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
+            <element signature="e#995#996#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pythonFile/judgeFall.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="62" column="3" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/WebSocket/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/FallDetection/pythonFile/judgeFall.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="16" column="18" lean-forward="true" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/FallDetection/pythonFile/KNNTrainFea.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4">
+          <caret line="74" column="19" lean-forward="true" selection-start-line="74" selection-start-column="19" selection-end-line="74" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/Controller/EnergyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/Controller/RecoFoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/Controller/FallStatisticsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2552">
+          <caret line="58" column="49" selection-start-line="58" selection-start-column="49" selection-end-line="58" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1458">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/WebSocket/ListenWebSocket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/WebSocket/DataProcess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pythonFile/KNNTrainFea.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="74" column="35" lean-forward="true" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/sportStateChart.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/Service/NewsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/RunPython/ModelTrain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/knn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="87" column="17" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/Controller/RecentDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/Utils/HeartAndStepUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="438">
+          <caret line="77" column="32" selection-start-line="77" selection-start-column="32" selection-end-line="77" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/Controller/ModelTrainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="74" column="57" selection-start-line="74" selection-start-column="57" selection-end-line="74" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/target/FallDetection-0.01-SNAPSHOT/WEB-INF/classes/data/heartAndStepData.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data/heartAndStepData.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="120" selection-start-line="1" selection-start-column="120" selection-end-line="1" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/js/knn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1540">
+          <caret line="83" column="22" lean-forward="true" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/POJO/Contact.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/pages/js/contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="58" column="34" lean-forward="true" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/snnu/Controller/ContactController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="38" column="51" lean-forward="true" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>FallDetection:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>FallDetection</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="clean:clean" />
+    <option value="package" />
+    <option value="compile" />
+    <option value="build" />
+    <option value="tomcat8:redeploy" />
+    <option value="install" />
+    <option value="test" />
+    <option value="test-compile" />
+    <option value="clean" />
+  </component>
+</project>

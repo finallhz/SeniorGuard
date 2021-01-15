@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.snnu.Dao.FallStatisticsDao">
+    <!--//添加摔倒记录
+    int addFallData(FallData fallData);
+    private int id;
+    private int uid;
+    private Date time;
+    private int flag;
+    -->
+    <insert id="addFallData" useGeneratedKeys="true" keyProperty="id">
+        insert into fallStatistics values (#{id}, #{uid}, #{time}, #{location}, #{flag})
+    </insert>
+
+    <!--//查询所有摔倒记录
+    List<FallData> getAllFallData();-->
+    <select id="getAllFallData" resultType="com.snnu.POJO.FallData">
+        select * from fallStatistics where flag=1 and uid=#{uid}
+    </select>
+
+    <!--//修改误报记录，标记位flag置为0
+    int updateFallData(FallData fallData);-->
+    <update id="updateFallData">
+        update fallStatistics set flag=#{flag} where id=#{id}
+    </update>
+
+    <!--//统计数据
+    List<String[]> getFallStatistic();-->
+    <select id="getFallStatistic" resultType="java.util.HashMap">
+        SELECT DATE_FORMAT(time,'%Y-%m') as months,COUNT(*) as nums FROM fallstatistics where uid=#{uid} GROUP BY MONTH(time)
+    </select>
+
+    <!--//误报统计
+    List<HashMap> getSucErr(int uid);-->
+    <select id="getSucErr" resultType="java.util.HashMap">
+        SELECT flag,COUNT(*) as SucErr FROM fallstatistics WHERE uid=#{uid} GROUP BY flag
+    </select>
+</mapper>

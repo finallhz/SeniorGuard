@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BasicChartActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp">
+        <TextView
+            android:id="@+id/fall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="跌倒状态"
+            android:gravity="center"
+            android:textSize="18dp"/>
+        <ImageView
+            android:id="@+id/fall1"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_below="@id/fall"
+            android:src="@drawable/walk">
+        </ImageView>
+        <TextView
+            android:id="@+id/fall2"
+            android:layout_width="160sp"
+            android:layout_height="80sp"
+            android:text="当前跌倒状态:"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_toRightOf="@id/fall1"
+            android:layout_below="@id/fall"/>
+        <TextView
+            android:id="@+id/fall3"
+            android:layout_width="160sp"
+            android:layout_height="80sp"
+            android:text="检测中"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_toRightOf="@id/fall2"
+            android:layout_below="@id/fall"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加速度数据图表"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_marginTop="15sp"/>
+    <!--这个元素是分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#39393A"/>
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="300sp" >
+
+    </com.github.mikephil.charting.charts.LineChart>
+
+    <!--这个元素是分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#39393A"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="角速度数据图表"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:layout_marginTop="20sp"/>
+    <!--这个元素是分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#39393A"/>
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" >
+    </com.github.mikephil.charting.charts.LineChart>
+    <!--这个元素是分割线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#39393A"/>
+
+</LinearLayout>

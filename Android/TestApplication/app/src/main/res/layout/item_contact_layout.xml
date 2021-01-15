@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:orientation="horizontal" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_gravity="center"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/item_tv_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:text="title"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:maxLines="2"
+                android:id="@+id/item_tv_des"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="des"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+            <TextView
+                android:maxLines="2"
+                android:id="@+id/item_tv_des1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="des"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+        </LinearLayout>
+        <Button
+
+            android:layout_toRightOf="@id/ll1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:id="@+id/login_btn_login"
+            android:background="#FF0015"
+            android:textSize="14dp"
+            android:textColor="#ffffff"
+             />
+    </RelativeLayout>
+
+
+</LinearLayout>

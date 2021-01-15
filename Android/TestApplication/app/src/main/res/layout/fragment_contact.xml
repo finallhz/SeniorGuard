@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fragment.CommunityFragment">
+    <!-- 全圆角-->
+    <LinearLayout style="@style/wrap_layout" android:id="@+id/ll1">
+        <LinearLayout style="@style/single_layout" >
+            <TextView android:id="@+id/b1" style="@style/usertext" android:text="添加紧急联系人" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_contact"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below= "@id/ll1"/>
+</RelativeLayout>

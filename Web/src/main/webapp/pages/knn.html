@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>赛尔 - KNN</title>
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/datepicker3.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/ECG.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+
+    <!--我引的-->
+    <link href="css/knn.css" rel="stylesheet">
+
+    <![endif]-->
+
+</head>
+
+<body STYLE="padding: 0">
+
+<!--主要内容盒子-->
+<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+            <li class="active">KNN图</li>
+        </ol>
+    </div><!--/.row-->
+
+    <div class="row knn-bd">
+        <div class="col-lg-2 knn-side">
+            <div>
+                <span>现有模型准确率</span>
+                <input type="text" readonly="readonly" id="knn_prec" class="knn-gray">
+            </div>
+            <div>
+                <span>交叉迭代次数</span>
+                <input type="number" value="3" id="knn_times">
+            </div>
+            <div>
+                <span>训练集</span>
+                <input type="number" value="70" id="knn_trainpre">
+            </div>
+            <div>
+                <span>测试集</span>
+                <input type="text" readonly="readonly" value="30" id="knn_testpre" class="knn-gray">
+            </div>
+            <div>
+                <span>上传文件</span>
+                <input type="file" id="knn_file">
+            </div>
+            <button type="button" id="knn_opera">运行</button>
+        </div>
+
+        <div class="col-lg-8 knn-md">
+            <p id="knn_wait">请输入数据并点击运行</p>
+            <div id="knn_chart"></div>
+        </div>
+
+        <div class="col-lg-2 knn-side">
+            <div>
+                <span>最小误差k</span>
+                <input type="text" readonly="readonly" id="knn_minK" class="knn-gray">
+            </div>
+            <div>
+                <span>更新模型准确率</span>
+                <input type="text" readonly="readonly" id="knn_updataPre" class="knn-gray">
+            </div>
+            <button type="button" id="knn_update">更新</button>
+        </div>
+    </div>
+
+</div>	<!--/.main-->
+
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+
+<!--我引的-->
+<script src="js/echarts.min.js"></script>
+<script src="js/knn.js"></script>
+
+<script>
+
+    $(".include").each(function() {
+        if (!!$(this).attr("file")) {
+            var $includeObj = $(this);
+            $(this).load($(this).attr("file"), function(html) {
+                $includeObj.after(html).remove(); //加载的文件内容写入到当前标签后面并移除当前标签
+            })
+        }
+    });
+
+    !function ($) {
+        $(document).on("click","ul.nav li.parent > a > span.icon", function(){
+            $(this).find('em:first').toggleClass("glyphicon-minus");
+        });
+        $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+    }(window.jQuery);
+
+    $(window).on('resize', function () {
+        if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+    })
+    $(window).on('resize', function () {
+        if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+    })
+</script>
+</body>
+
+</html>

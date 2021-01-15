@@ -1,0 +1,230 @@
+.fl {
+    float: left;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+    /* IE6、7专门清除浮动的样式 */
+}
+
+#logo {
+    position: absolute;
+    top: -27px;
+    left: 15px;
+    height: 120px;
+}
+
+.site-topbar {
+    position: fixed;
+    top: 0;
+    height: 60px;
+    line-height: 60px;
+    background-color: #333;
+    z-index: 9;
+}
+
+.site-topbar-le {
+    float: left;
+    color: #adcbea;
+    font-size: 30px;
+}
+
+.site-topbar-ri {
+    float: right;
+}
+
+.site-topbar-ri a {
+    padding: 0 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-topbar-th {
+    float: right;
+    margin-left: 20px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.site-topbar-th div {
+    float: left;
+    margin-left: 20px;
+    width: 20px;
+    height: 20px;
+    /* background-color: #fff; */
+}
+
+.site-topbar-th div img {
+    width: 20px;
+    height: 20px;
+}
+
+.site-header {
+    margin-top: 60px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    /*background-color: #d6e8f7;*/
+    background-color: rgba(52,167,255,.2);
+}
+
+.site-car {
+    height: 650px;
+}
+
+.site-car-img {
+    position: relative;
+    margin: 30px auto 0;
+    width: 1300px;
+    /*width: 100%;*/
+    height: 650px;
+}
+
+.site-car-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+
+}
+
+.site-car-img img:first-child {
+    display: block;
+}
+
+.site-car-point {
+    position: absolute;
+    bottom: 30px;
+    right: 60px;
+}
+
+.po1,
+.po2,
+.po3 {
+    margin: 0 8px;
+    width: 15px;
+    height: 15px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.xz {
+    background-color: #aaa;
+}
+
+.img-box {
+    overflow: hidden;
+}
+
+
+
+.main-one {
+    padding-top: 250px;
+    height: 700px;
+}
+
+.main-one h1 {
+    /* height: 200px;
+    padding-top: 200px; */
+    text-align: center;
+    color: #54a5f5;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.main-one p {
+    /* padding-top: 15px;
+    padding-bottom: 200px; */
+    width: 62%;
+    margin: 0 auto;
+    color: #bbb;
+    font-size: 17px;
+}
+
+.main-two {
+    width: 100%;
+    height: 400px;
+    /* background-color: #333; */
+}
+
+.card {
+    width: 20%;
+    height: 400px;
+}
+
+.card-l {
+    box-sizing: border-box;
+    padding-top: 90px;
+    width: 100%;
+    height: 400px;
+    /* border: 1px solid #54a5f5; */
+    border-right: 1px solid #fff;
+    text-align: center;
+    background-color: #333;
+}
+
+.card .card-r p {
+    height: 400px;
+    line-height: 400px;
+    text-align: center;
+}
+
+.main-two img {
+    width: 137px;
+    height: 137px;
+}
+
+.main-two p {
+    color: #fff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.card-r {
+    display: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #fff;
+    background-color: #6eb2f7;
+}
+
+
+.main-two .card-r p {
+    line-height: 510px;
+    text-align: center;
+    font-size: 36px;
+}
+
+.main-two .card:first-child {
+    width: 40%;
+}
+
+.main-two .card:first-child .card-r {
+    display: inline-block;
+    width: 50%;
+}
+
+.change {
+    background-color: #6eb2f7;
+    border: none;
+    width: 50%;
+}
+
+.footer {
+    margin-top: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: #e4eaf1;
+}

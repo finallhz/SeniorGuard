@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+
+<script type="text/javascript">
+    window.onload = getcookie;
+
+    /*function getcookie() {
+        var c = $.cookie("JSESSIONID");
+        console.log("获取的cookie值：" + c);
+        var params = c.split("&");
+        var username = params[1].split("=")[1];
+        var role = params[2].split("=")[1];
+        console.log(username+role);
+        alert(username);
+        alert(role);
+    }*/
+
+    function  getcookie() {
+        var usernameCookie = $.cookie("usernameCookie");
+        var roleCookie = $.cookie("roleCookie");
+        console.log(usernameCookie+roleCookie);
+    }
+</script>
+
+</body>
+</html>

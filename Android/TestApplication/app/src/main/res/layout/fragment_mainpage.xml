@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--主页轮播图界面-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fragment.CommunityFragment"
+    android:orientation="horizontal"
+    android:background="@drawable/bg">
+
+    <SearchView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:queryHint="查询您感兴趣的信息"/>
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_below="@id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30sp">
+
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/walk1"
+            android:id="@+id/ci1"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/round_button"/>
+        <TextView
+            android:id="@+id/tvd1"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/ci1"
+            android:layout_alignLeft="@id/ci1"
+            android:text="    步行数据"
+            android:textSize="14sp">
+        </TextView>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/run"
+            android:id="@+id/ci2"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/round_button"/>
+        <TextView
+            android:id="@+id/tvd2"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:text="    跑步数据"
+            android:layout_below="@id/ci2"
+            android:layout_toRightOf="@id/tvd1"
+            android:layout_alignLeft="@id/ci2"
+            android:textSize="14sp">
+        </TextView>
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/oxygen"
+            android:id="@+id/ci3"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/round_button"/>
+        <TextView
+            android:id="@+id/tvd3"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:text="    血氧数据"
+            android:layout_below="@id/ci3"
+            android:layout_toRightOf="@id/tvd2"
+            android:layout_alignLeft="@id/ci3"
+            android:textSize="14sp">
+        </TextView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_marginTop="120sp"
+        android:layout_below="@id/banner"
+        android:textColor="#00BCD4"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_marginTop="10sp"
+        android:layout_below="@id/tv1"
+        android:textSize="16sp"
+        android:gravity="left" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:layout_below="@id/tv2">
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="18sp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="当前心率数据：100次/分钟 当前位置：XXX市XXX区XXXXXXX 当前运动状态：正常 当前其他信息：无"
+            android:textSize="16sp">
+            <requestFocus/>
+        </TextView>
+    </LinearLayout>
+
+</RelativeLayout>

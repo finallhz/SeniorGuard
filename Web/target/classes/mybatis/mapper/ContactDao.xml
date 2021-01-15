@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--编写每一个方法都如何向数据库发送sql语句，如何执行，相当于接口的实现类-->
+<!--namespace：名称空间，写接口的全类名，相当于告诉MyBatis这个配置文件是实现哪个接口的-->
+<mapper namespace="com.snnu.Dao.ContactDao">
+
+    <!--
+        添加紧急联系人，同时更新桥表
+        int addContact(Contact contact);-->
+    <insert id="addContact" useGeneratedKeys="true" keyProperty="cid">
+       insert into contact
+       values (#{cid}, #{cname}, #{email}, #{phone})
+   </insert>
+
+    <!--
+        根据联系人信息查询id
+    -->
+    <select id="getContactID" resultType="java.lang.Integer">
+        select cid from contact where cname=#{cname} and email=#{email} and phone=#{phone}
+    </select>
+
+    <!--
+        添加用户和联系人关联信息
+        int addUserRefCont(Contact contact);
+    -->
+    <insert id="addUserRefCont" useGeneratedKeys="true" keyProperty="id">
+        insert into user_ref_cont(uid, cid)
+        select #{uid}, #{cid}
+        from user_ref_cont
+        where not exists (select * from user_ref_cont where uid = #{uid} and cid = #{cid}) limit 1
+    </insert>
+
+
+    <!--//查询当前用户下所有联系人
+    List<Contact> getContactsByUID(int uid);-->
+    <select id="getContactsByUID" resultMap="contUID">
+        SELECT contact.*,user.*
+        FROM
+            user
+        INNER JOIN user_ref_cont on user.uid = user_ref_cont.uid
+        INNER JOIN contact on contact.cid = user_ref_cont.cid
+        WHERE
+            user.uid = #{uid};
+    </select>
+
+    <resultMap id="contUID" type="com.snnu.POJO.Contact">
+        <id property="cid" column="cid"/>
+        <result property="cname" column="cname"/>
+        <result property="email" column="email"/>
+        <result property="phone" column="phone"/>
+        <!-- 定义集合元素的封装
+             property="" : 指定哪个属性是集合属性
+             javaType : 指定对象属性 association
+             ofType : 指定集合里面元素的类型-->
+        <collection property="users" ofType="com.snnu.POJO.User">
+            <!--标签体中指定集合中这个元素的封装规则-->
+            <id property="uid" column="uid"/>
+            <result property="username" column="username"/>
+            <result property="gender" column="gender"/>
+            <result property="age" column="age"/>
+        </collection>
+    </resultMap>
+
+    <!--//修改联系人信息
+    int updateContact();-->
+    <update id="updateContact">
+        update contact
+        <set>
+            <if test="cname != null">cname=#{cname},</if>
+            <if test="email != null">email=#{email},</if>
+            <if test="phone != null">phone=#{phone}</if>
+        </set>
+        where cid=#{cid}
+    </update>
+
+    <!--//根据姓名模糊查找
+    List<Contact> getContactByCname(String cname);-->
+    <select id="getContactByCname" resultType="com.snnu.POJO.Contact">
+        select
+            *
+        from
+            contact
+        INNER JOIN user_ref_cont on contact.cid = user_ref_cont.cid
+        where
+            uid=#{uid}
+        and
+            cname like concat('%', #{cname}, '%')
+    </select>
+
+    <!--//删除联系人信息
+    int deleteContact();-->
+    <delete id="deleteContact">
+        delete from contact where cid=#{cid}
+    </delete>
+
+    <!--//删除用户和联系人关联信息
+    int deleteUserRefCont(Contact contact);-->
+    <delete id="deleteUserRefCont">
+        delete from user_ref_cont where cid=#{cid} and uid=#{uid}
+    </delete>
+
+    <!--//查询UserRefCont中是否还有cid
+    int getCidOnURC(int cid);-->
+    <select id="getCidOnURC" resultType="java.lang.Integer">
+        select count(*) from user_ref_cont where cid=#{cid};
+    </select>
+
+</mapper>

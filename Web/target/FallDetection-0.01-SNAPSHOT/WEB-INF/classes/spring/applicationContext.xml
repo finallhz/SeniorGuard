@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <!--Spring除控制器不要，其他的业务逻辑组件都要，DAO，Service-->
+    <context:component-scan base-package="com.snnu">
+        <!--扫描排除不写use-default-filters-->
+        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+    </context:component-scan>
+
+    <!--0.导入外部的配置文件-->
+    <context:property-placeholder location="classpath*:dbconfig.properties"/>
+    <!--1.配数据源-->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="user" value="${jdbc.user}"></property>
+        <property name="password" value="${jdbc.password}"></property>
+        <property name="jdbcUrl" value="${jdbc.jdbcUrl}"></property>
+        <property name="driverClass" value="${jdbc.driverClass}"></property>
+
+        <property name="maxPoolSize" value="${jdbc.maxPoolSize}"></property>
+        <property name="minPoolSize" value="${jdbc.minPoolSize}"></property>
+    </bean>
+
+    <!--2.配置jdbcTemplate操作数据库，pass-->
+    <!--3.配置mybatis操作数据库-->
+    <!--可以根据配置文件得到sqlSessionFactoryBean-->
+    <bean class="org.mybatis.spring.SqlSessionFactoryBean">
+        <!--指定配置文件位置-->
+        <property name="configLocation" value="classpath:mybatis/mybatis-config.xml"></property>
+        <property name="dataSource" ref="dataSource"/>
+        <!--指定xml映射文件的位置-->
+        <property name="mapperLocations" value="classpath:mybatis/mapper/*.xml"/>
+    </bean>
+    <!--我们要把每一个dao接口的实现加入到ioc容器中-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <!--指定dao接口所在的包-->
+        <property name="basePackage" value="com.snnu.Dao"></property>
+    </bean>
+
+    <!--4.配置事务控制，配置事务管理器，让它控制数据源里面的连接的关闭和提交-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!--5.基于xml配置，配置事务（transactionManager相当于事务切面）；哪些方法切入事务还要写切入点表达式-->
+    <aop:config>
+        <!--配置切入点表达式 省略访问修饰符，切入service包下的任意类，任意方法，任意参数-->
+        <aop:pointcut id="txPoint" expression="execution(* com.snnu.Service.*.*(..))"></aop:pointcut>
+        <!--事务建议-->
+        <aop:advisor advice-ref="myTx" pointcut-ref="txPoint"></aop:advisor>
+    </aop:config>
+
+    <!--6.配置事务建议、事务增强、事务属性
+    transaction-manager 指定要配置的事务切面（管理器）
+    -->
+    <tx:advice id="myTx" transaction-manager="transactionManager">
+        <!--配置事务属性-->
+        <tx:attributes>
+            <!--所有方法都是事务方法，抛出异常回滚-->
+            <tx:method name="*" rollback-for="java.lang.Exception"/>
+            <tx:method name="get*" read-only="true"/>
+            <tx:method name="login*" read-only="true"/>
+        </tx:attributes>
+    </tx:advice>
+
+    <!--创建JavaMailSenderImpl实例-->
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="${mailHost}"/>
+        <property name="username" value="${mailUsername}"/>
+        <property name="password" value="${mailPassword}"/>
+        <property name="javaMailProperties">
+            <props>
+                <!-- 必须进行授权认证，它的目的就是阻止他人任意乱发邮件 -->
+                <prop key="mail.smtp.auth">false</prop>
+                <prop key="mail.smtp.timeout">${mailTimeout}</prop>
+                <!-- SMTP加密方式:连接到一个TLS保护连接 -->
+                <prop key="mail.smtp.starttls.enable">true</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- 开启基于注解AOP功能：aop名称空间-->
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+    <bean id="heartAndStep" class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <!-- 这里是PropertiesFactoryBean类，它也有个locations属性，也是接收一个数组，跟上面一样 -->
+        <property name="locations">
+            <list>
+                <value>classpath*:data/heartAndStepData.properties</value>
+            </list>
+        </property>
+    </bean>
+</beans>

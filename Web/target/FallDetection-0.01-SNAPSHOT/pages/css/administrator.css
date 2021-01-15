@@ -1,0 +1,299 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+    outline: none;
+}
+
+input {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+input:focus {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*正常的未被访问过的链接*/
+
+a:link {
+    text-decoration: none;
+}
+
+/*已经访问过的链接*/
+
+a:visited {
+    text-decoration: none;
+}
+
+/*鼠标划过(停留)的链接*/
+
+a:hover {
+    text-decoration: none;
+}
+
+/* 正在点击的链接*/
+
+a:active {
+    text-decoration: none;
+}
+
+#ad_header ul {
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid #ddd;
+}
+
+#ad_header li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    color: #ddd;
+}
+
+#ad_header li:nth-child(2n+1) a {
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    /* 鼠标变小手 */
+    cursor: pointer;
+}
+
+.bxz_01 {
+    border-bottom: 2px solid #53a5f8;
+}
+
+#ad_one {
+    width: 100%;
+    height: 60px;
+    margin-left: 30px;
+    line-height: 60px;
+}
+
+#ad_one div:nth-child(2){
+    margin-top: 16px;
+    border: 1px solid #ccc;
+    /*border-radius: 5px;*/
+}
+
+#ad_one span {
+    float: left;
+    /*margin-top: 10px;*/
+    margin-left: 15px;
+    height: 28px;
+    width: 50px;
+}
+
+#ad_one select {
+    float: left;
+    /*margin-top: 16px;*/
+    height: 28px;
+    border: none;
+    outline: none;
+}
+
+#ad_one input {
+    float: left;
+    /*margin-top: 16px;*/
+    width: 150px;
+    height: 28px;
+    border: none;
+    /*border-radius: 5px;*/
+    background-color: #fff;
+    padding-left: 5px;
+}
+
+#ad_one button {
+    float: left;
+    margin-top: 16px;
+    margin-left: 50px;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    border-radius: 5px;
+    background-color: #53a5f8;
+    color: #fff;
+}
+
+#ad_two table {
+    background-color: #fff;
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+#ad_two thead {
+    background-color: #eee;
+    font-weight: 700;
+}
+
+#ad_two td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+#ad_two thead td:first-child {
+    width: 80px;
+}
+
+#ad_two thead td:nth-child(2) {
+    width: 100px;
+}
+
+#ad_two thead td:nth-child(3) {
+    width: 70px;
+}
+
+#ad_two thead td:nth-child(4) {
+    width: 70px;
+}
+
+#ad_two thead td:nth-child(5) {
+    width: 160px;
+}
+
+#ad_two thead td:nth-child(6) {
+    width: 200px;
+}
+
+#ad_two thead td:nth-child(7) {
+    width: 300px;
+}
+
+#ad_two thead td:nth-child(8) {
+    /*width: 200px;*/
+}
+
+#ad_two thead td:nth-child(9) {
+    /*width: 220px;*/
+}
+
+#ad_two button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    line-height: 22px;
+    border-radius: 5px;
+    background-color: #666;
+    color: #fff;
+    font-size: 12px;
+}
+
+#ad_two button:last-child {
+    background-color: #d4534d;
+}
+
+
+
+
+
+
+
+
+
+
+/*发送邮件*/
+.ad-email01 {
+    width: 98%;
+    height: 850px;
+    margin: 20px 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    display: none;
+}
+
+.ad-email01 button {
+    padding: 5px 8px;
+    margin: 20px 0 0 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #52AC3D;
+    color: #fff;
+    font-weight: 700;
+    /*box-shadow: 2px 2px 8px #888;*/
+}
+
+.ad-email01 button:nth-child(2) {
+    background-color: #eee;
+    color: #333;
+    margin-left: 10px;
+}
+
+.ad-email01-bd {
+    width: 95%;
+    height: 55px;
+    margin: 0 35px;
+    border-bottom: 1px solid #ccc;
+}
+
+.ad-email01-bd span {
+    display: inline-block;
+    font-weight: 700;
+    line-height: 40px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.ad-email01-bd input {
+    width: 500px;
+    padding: 0 15px;
+    line-height: 40px;
+}
+
+.ad-email01 p {
+    width: 95%;
+    height: 610px;
+    margin: 35px;
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.ad-email01 p:focus {
+    outline: none;
+}
+
+.bd-current {
+    border-color: #53A5F8;
+}
+
+.p-current {
+    box-shadow: 0 0 5px #999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+/*#logo {*/
+    /*position: absolute;*/
+    /*top: -25px;*/
+    /*left: 15px;*/
+    /*height: 105px;*/
+/*}*/
+
+.menu li a {
+    transition: all 1s;
+}
+
+.menu li a:hover {
+    padding-left: 50px;
+}
