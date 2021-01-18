@@ -19,8 +19,8 @@ public class AliyunMessageUtil {
     //短信操作接口类型（验证码短信）
     static final String msgType = "SendSms";
     //  此处需要替换成开发者自己的AK(遵循阿里云规范，创建子用户ak)
-    static final String accessKeyId = "LTAI4FyckxGmfuteddMdWpEB";
-    static final String accessKeySecret = "UZ0g7uZ5tBr3qiXhvD7SrbeZtKUv3C";
+    static final String accessKeyId = "#################";
+    static final String accessKeySecret = "#################";
     //  短信签名
     static final String signName = "SG验证密码";
     //  短信模板code(根据需要,注册、密码重置可用不同的模板code,阿里云访问控制台设置多套模板)
